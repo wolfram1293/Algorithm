@@ -3,6 +3,8 @@ edges = [[0, 1], [0, 2], [1, 3], [2, 3], [2, 4], [3, 4]] #頂点from toのリス
 
 # Khanのアルゴリズム
 from collections import deque
+
+# ⼊⼒されたグラフがDAGである場合，全てのノードと辺は⾼々1回しかチェックされない O(V+E)
 def topoSortKhan(V,edges):
     E = len(edges)
     indeg = [0]*V # ⼊次数を格納する配列
