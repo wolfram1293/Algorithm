@@ -31,3 +31,17 @@ def dfs(edges, start, end):
                     waiting.append(n)
 
 dfs(edges, 0, 6)
+
+
+#再帰版
+done = [0]*N #一度通った頂点を記録
+def dfs_re(edges, start, end):
+    if len(edges[start])==0 or done[start]==1:
+        return
+    if start==end:
+        print('=FOUND!=')
+    done[start]=1
+    for n in edges[start]:
+        dfs_re(edges,n, end)
+
+dfs_re(edges,0,6)
