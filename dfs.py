@@ -1,10 +1,16 @@
 
-N,M,S,T=map(int,input().split())
-edges=[[] for i in range(N)] #各頂点からつながる頂点のリスト
-for i in range(M):
-    a,b=list(map(int,input().split()))
-    edges[a-1].append(b-1)
-    edges[b-1].append(a-1)
+#edges=[[] for i in range(N)] 
+#各頂点からつながる頂点のリスト
+edges = [
+[1, 2],#ノードA
+[0, 3, 5],#ノードB
+[0, 3, 4],#ノードC
+[1, 2, 5],#ノードD
+[2, 6],#ノードE
+[1, 3, 7],#ノードF
+[4],#ノードG
+[5]]#ノードH
+N = len(edges)
 
 done = [0]*N #一度通った頂点を記録
 def dfs(edges, start, end):
@@ -23,3 +29,5 @@ def dfs(edges, start, end):
                 if done[n] != 2:
                     done[n] = 1 # 未訪問なので1
                     waiting.append(n)
+
+dfs(edges, 0, 6)
