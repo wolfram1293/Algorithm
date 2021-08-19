@@ -1,4 +1,36 @@
+V = 5
+edges = [[0, 1], [0, 2], [1, 3], [2, 3], [2, 4], [3, 4]] #頂点from toのリスト
+
+# Khanのアルゴリズム
+from collections import deque
+def topoSortKhan(V,edges):
+    E = len(edges)
+    indeg = [0]*V # ⼊次数を格納する配列
+    outedge = [[] for _ in range (V)] # 出⼒辺を保持する配列
+    for e in edges: # ⼊次数と出⼒辺の情報を整理する
+        indeg[e[1]] += 1
+        outedge[e[0]].append(e[1])
+
+    sorted_g = list(v for v in range(V) if indeg[v]==0) # ソート済のノードを格納する配列 最初に⼊次数0のものを⼊れておく
+    deq = deque(sorted_g) # ⼊次数0のノードを処理するためのdeque
+
+    while deq: # ⼊次数0のノードがある限り繰り返す
+        v = deq.popleft() # deq.pop()でもよい
+        for u in outedge[v]: # vからつながるすべてのノードu
+            E -= 1
+            indeg[u] -= 1 # E,uの⼊次数を1減らす
+            if indeg[u] == 0: # uの⼊次数が0
+                deq.append(u) # uをdeqとsorted_gに⼊れる
+                sorted_g.append(u)
+    if E != 0:
+        raise Exception("not DAG") # DAGになっていないので，エラーを返す
+    print(' '.join(map(str, sorted_g)))
+
+topoSortKhan(V, edges)
+
+
 # ist2018 3(6)ans
+# Sへのpushタイミング、ループ検出なし以外はKhanと同じ
 
 from collections import deque
 
@@ -27,8 +59,5 @@ def topoSortBFS(V, edges):
                 Q.append(v)
 
     print(' '.join(map(str, S)))
-
-V = 5
-edges = [[0, 1], [0, 2], [1, 3], [2, 3], [2, 4], [3, 4]] #頂点from toのリスト
 
 topoSortBFS(V, edges)
