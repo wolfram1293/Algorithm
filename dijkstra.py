@@ -3,6 +3,7 @@ import heapq
 
 #edges = [[]for i in range(N)]
 #edges[a].append([b,d])
+# 各ノードからの行き先、距離
 edges = [[[1, 5], [2, 4]], #ノードA0
 [[0, 5], [3, 3], [5, 9]], #ノードB1
 [[0, 4], [3, 2], [4, 3]], #ノードC2
