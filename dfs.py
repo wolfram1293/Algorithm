@@ -12,6 +12,9 @@ edges = [
 [5]]#ノードH
 N = len(edges)
 
+#全てのノードを1度訪れ，全ノードを処理するまでに全ての辺を1通りチェックする．
+#ノードの数をV，辺の数をEとする．隣接リストの場合，つながっているノードのみを処理することになるので,O(V+E)．
+
 done = [0]*N #一度通った頂点を記録
 def dfs(edges, start, end):
     waiting = []
@@ -31,7 +34,6 @@ def dfs(edges, start, end):
                     waiting.append(n)
 
 dfs(edges, 0, 6)
-
 
 #再帰版
 done = [0]*N #一度通った頂点を記録
