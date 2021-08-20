@@ -22,7 +22,6 @@ for i in range(len(edges)):
 # 隣接リストの場合，辺の数をEとして，辺のソートにE log Eかかる
 # 各辺を⼊れるかどうかの判断はUnion-Find⽊を使うとα(V)となり，これをE回やるので，E α(V)
 # よって，アルゴリズム全体ではO(E log E)
-import sys
 
 class UnionFind: #UF木の実装
     def __init__(self, n):
@@ -73,3 +72,34 @@ def Kruskal(V, edges): #クラスカル法の実装
 Kruskal(N, edges2)
 
 
+# ノードベースのアプローチ：プリム法
+# すでに到達した頂点の集合からまだ到達していない頂点の集合への辺のうち，距離が最短のものを追加し，全ノードつながったら終了
+# この実装では，ヒープに⼊る要素の数は辺の総数になるので，E．よって，追加，削除にかかる計算量はlog E．
+# ヒープへの追加も取り出しもE回あるので，全体ではO(E log E)となる
+import heapq
+
+def Prim(V, edges): #プリム法の実装
+    edges2 = [[] for i in range(V)] # ノードiからのすべての辺を格納
+    for e in edges:
+        edges2[e[0]].append([e[2], e[0], e[1]]) # ヒープでソートされるために距離を最初の要素にする
+    heap = [] # ヒープ
+    mst = [] # 最⼩全域⽊の辺を保持するリスト
+    done = [False]*V # ノードが最⼩全域⽊に⼊ったかどうかのフラグ
+    start=0
+    done[start] = True # ノードを1つ選ぶ．何でも良いがこの実装ではノード0を選ぶことにする
+    for i in range(len(edges2[start])): # ノード0に接続する辺を全てヒープに⼊れる
+        heapq.heappush(heap,edges2[start][i])
+    min_d = 0
+    while heap:
+        e = heapq.heappop(heap) # 距離が最短のものを取り出す
+        if done[e[2]] == False: # その辺の到達先（ノードj）が未訪問なら追加
+            done[e[2]] = True
+            mst.append([e[1], e[2]])
+            for i in range(len(edges2[e[2]])): #ノードjから伸びる辺をe_heapqに⼊れる
+                heapq.heappush(heap,edges2[e[2]][i])
+            min_d += e[0]
+
+    #print(min_d)
+    print(mst)
+
+Prim(N,edges2)
