@@ -1,3 +1,33 @@
+# Algo2021 11 UF rankを保持、より⾼い⽅にマージ
+class UnionFind: #UF木の実装
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+        self.height = [0 for i in range(n)] # 各⽊の⾼さ
+
+    def get_root(self, i):
+        if self.parent[i] == i: # ⾃分が根ノードの場合
+            return i
+        else: # 経路圧縮しながら根ノードを探す
+            self.parent[i] = self.get_root(self.parent[i])
+            return self.parent[i]
+    
+    def unite(self, i, j):
+        ri = self.get_root(i)
+        rj = self.get_root(j)
+        if ri != rj: # より⾼い⽅にマージ
+            if self.height[ri] < self.height[rj]:
+                self.parent[ri] = rj
+            else:
+                self.parent[rj] = ri
+                if self.height[ri] == self.height[rj]:
+                    self.height[ri] += 1
+    
+    def is_in_group(self, i, j):
+        if self.get_root(i) == self.get_root(j):
+            return True
+        else:
+            return False
+
 # 根の親の値にサイズの情報を持たせる 要素が根（ルート）の場合は-(そのグループの要素数)を格納する (根の親の値にランク（木の高さ）の情報を保持してもいい)
 # 汎用バージョン 参考 https://note.nkmk.me/python-union-find/
 
