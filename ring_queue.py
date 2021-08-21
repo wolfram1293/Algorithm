@@ -1,6 +1,6 @@
 # リングバッファでの実装
 
-class Queue:
+class ringQueue:
     def __init__(self,size: int):
         self.queue = [None for i in range(size)]
         self.size = size
@@ -23,7 +23,7 @@ class Queue:
         return a
 
 Q = 3
-q=Queue(Q)
+q = ringQueue(Q)
 q.enqueue(1)
 q.enqueue(2)
 q.dequeue()
