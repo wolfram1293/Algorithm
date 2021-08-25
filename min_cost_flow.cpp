@@ -5,7 +5,7 @@
 #include <cassert>
 #include <algorithm>
 #include <functional>
-
+// 蟻本p200
 // 辺を表す構造体 (行き先、容量、コスト、逆辺)
 struct edge { int to, cap, cost, rev; };
 const int V=4; // 頂点数
