@@ -66,3 +66,30 @@ add_edge(2, 3, 6, 9)
 #print(G)
 PrimalDual(G,0,3,7)
 
+# Algo 11-2
+# スタートから各文字列に流量a、コストiのエッジ、各文字列から各アルファベットに流量(各文字列中の各アルファベットの数)、コスト0のエッジ、
+# 各アルファベットからゴールに流量(各アルファベットの必要数)、コスト0のエッジを引き、プライマルデュアル法により最小費用流を求める
+lines = [' ' for i in range(5)]
+lines[0] = 'aabcd'
+lines[1] = '3'
+lines[2] = 'aca 2'
+lines[3] = 'bda 3'
+lines[4] = 'ab 10'
+
+T = lines[0]
+N = int(lines[1])
+V = 1+N+26+1 # 頂点数
+G = [[] for i in range(V)] # グラフ
+for i in range(1,N+1):
+    s,a = [x.strip() for x in lines[i+1].split()]
+    add_edge(0, i, int(a), i) # スタートから各文字列に流量a、コストiのエッジを引く
+    for j in range(26):
+        if s.count(chr(ord('a')+j)) != 0:
+            add_edge(i,N+1+j, s.count(chr(ord('a')+j)), 0) # 各文字列から各アルファベットに流量(各文字列中の各アルファベットの数)、コスト0のエッジを引く
+
+for i in range(26):
+    if T.count(chr(ord('a')+i))!=0:
+        add_edge(N+1+i,V-1, T.count(chr(ord('a')+i)), 0) # 各アルファベットからゴールに流量(各アルファベットの必要数)、コスト0のエッジを引く
+
+#print(G)
+PrimalDual(G,0,V-1,len(T))
