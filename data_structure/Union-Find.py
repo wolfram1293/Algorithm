@@ -34,6 +34,7 @@ class UnionFind: #UF木の実装
 class UnionFind():
     def __init__(self, n):
         self.parent = [-1] * n
+        self.n = n
 
     def unite(self, x, y):
         x = self.find(x)
