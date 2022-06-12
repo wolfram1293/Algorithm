@@ -1,5 +1,5 @@
 import sys
-
+# mをaで割ったあまり0なら文字列加える？みたいなやつ
 raw = input().split()
 l = []
 for v in raw[:-1]:

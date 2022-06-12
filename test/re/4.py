@@ -1,7 +1,7 @@
 import sys
 import requests
 import json
-
+# 漸化式の一部にAPIのリターンが入る (指定？により)再帰で実装
 def f(n, table):
     if table[n] == 0:
         if n == 0:
@@ -36,7 +36,7 @@ else:
 table = [0] * (n+1)
 print(f(n, table))
 
-# 漸化式
+# 漸化式方式
 def f(n):
     table = [0] * (n+1)
     for i in range(n+1):
