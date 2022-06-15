@@ -6,7 +6,7 @@ def seven(day):
     else:
         return False
 
-def fuga(day):    
+def fuga0(day):    
     day = list(str(day))
     day = [int(v) for v in day]
     hoge = [0] * len(day)
@@ -14,6 +14,18 @@ def fuga(day):
     for i in range(len(day)):
         if i != 0:
             hoge[-(i+1)] = int(10**(digit-1)) + hoge[-i] * 9
+
+        digit += 1
+    return hoge
+
+def fuga(day):    
+    day = list(str(day))
+    day = [int(v) for v in day]
+    hoge = [0] * len(day)
+    digit = 0
+    for i in range(len(day)):
+        if i != 0:
+            hoge[-(i+1)] = int(10**(digit)) - 9 ** (digit)
 
         digit += 1
     return hoge
