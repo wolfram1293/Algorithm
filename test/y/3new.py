@@ -1,4 +1,4 @@
-def seven(day):
+def seven(day): # 7がつく数字の判定 O(log n)
     day = list(str(day))
     day = [int(v) for v in day]
     if 7 in day:
@@ -6,19 +6,19 @@ def seven(day):
     else:
         return False
 
-def fuga0(day):    
+def fuga0(day): # 各桁(10**n) の7がつく数字の数をカウントする
     day = list(str(day))
     day = [int(v) for v in day]
     hoge = [0] * len(day)
     digit = 0
-    for i in range(len(day)):
+    for i in range(len(day)): # 漸化式での実装(10**nまでの7がつく数字の数 = 10**(n-1) + 10**(n-1)までの7がつく数字の数 * 9) 
         if i != 0:
             hoge[-(i+1)] = int(10**(digit-1)) + hoge[-i] * 9
 
         digit += 1
     return hoge
 
-def fuga(day):    
+def fuga(day): # 各桁(10** n) の7がつく数字の数をカウントする(より単純)
     day = list(str(day))
     day = [int(v) for v in day]
     hoge = [0] * len(day)
@@ -69,7 +69,6 @@ day = int(n / (a + b * ratio))
 
 point = a * (day + 1) + b * cntseven(day)
 if point < n:
-    print('a')
     while True:
         day += 1
         point += a
@@ -80,7 +79,6 @@ if point < n:
             break
 
 else:
-    print('b')
     while True:
         day -= 1
         point -= a
