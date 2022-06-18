@@ -14,25 +14,23 @@ def fuga0(day): # 各桁(10**n) の7がつく数字の数をカウントする
     for i in range(len(day)): # 漸化式での実装(10**nまでの7がつく数字の数 = 10**(n-1) + 10**(n-1)までの7がつく数字の数 * 9) 
         if i != 0:
             hoge[-(i+1)] = int(10**(digit-1)) + hoge[-i] * 9
-
         digit += 1
     return hoge
 
-def fuga(day): # 各桁(10** n) の7がつく数字の数をカウントする(より単純)
+def fuga(day): # 各桁(10** n) の7がつく数字の数をカウントする(よりシンプル)
     day = list(str(day))
     day = [int(v) for v in day]
     hoge = [0] * len(day)
     digit = 0
-    for i in range(len(day)):
+    for i in range(len(day)): # 場合の数を使う実装(10**nまでの7がつく数字の数 = 全体(10**n) - どの桁にも7がつかない数字の数(9**n))
         if i != 0:
-            hoge[-(i+1)] = int(10**(digit)) - 9 ** (digit)
-
+            hoge[-(i+1)] = int(10**(digit)) - int(9**(digit))
         digit += 1
     return hoge
 
-def cntseven(day):
+def cntseven(day): # dayまでの7がつく数字の数をカウントする
     ans = 0
-    hoge = fuga(day)
+    hoge = fuga(day) # 各桁(10** n) の7がつく数字の数をカウント
     day = list(str(day))
     day = [int(v) for v in day]
     flag = False
