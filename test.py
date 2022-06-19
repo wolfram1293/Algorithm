@@ -1,4 +1,5 @@
 import time
+import matplotlib.pyplot as plt
 def seven(day):
     day = list(str(day))
     day = [int(v) for v in day]
@@ -7,40 +8,30 @@ def seven(day):
     else:
         return False
 
-def cntseven(day):
-    ans = 0
-    i = 0
+x = [i for i in range(1,8)]
+y = []
+for i in x:
+    time_sta = time.perf_counter()
+
+    a, b, n = 1,1,int(10**i)
+    point = 0
+    day = 0
+
     while True:
-        if day == 0:
+        point += a
+        if seven(day):
+            point += b
+        if point >= n:
             break
-        remainder = day % 10
-        if remainder >= 7:
-            ans += 1
-        day = (day - remainder) / 10
-        ans += (10 ** i) *day
-        i += 1
-    
-    return ans
 
+        day += 1
 
-time_sta = time.time()
+    time_end = time.perf_counter()
+    d = time_end- time_sta
+    y.append(d)
+    print(d)
 
-a, b, n = 1,1,int(10**7)
-point = 0
-day = 0
-
-day1 = n // a
-
-while True:
-    point += a
-    if seven(day):
-        point += b
-    if point >= n:
-        break
-
-    day += 1
-
-print(day)
-time_end = time.time()
-d = time_end- time_sta
-print(d)
+plt.figure()
+plt.gca().set_aspect('equal', adjustable='box')
+plt.plot(x, y)
+plt.show()

@@ -1,3 +1,5 @@
+import time
+import matplotlib.pyplot as plt
 def seven(day): # 7がつく数字の判定 O(log n)
     day = list(str(day))
     day = [int(v) for v in day]
@@ -57,42 +59,47 @@ def cntseven(day): # dayまでの7がつく数字の数をカウントする
 
     return ans
 
-a, b, n = map(int, input().split())
-point = 0
-day0 = n // a # 大体の日数のあたりをつける
-hoge = fuga(day0)
-ratio = hoge[0] / 10 ** (len(list(str(hoge[0])))) # 大体の日数から7のつく日の割合を計算
+x = [i for i in range(1,8)]
+y = []
+for i in x:
+    time_sta = time.perf_counter()
 
-day = int(n / (a + b * ratio)) # 7のつく日の割合からより正確な日数のあたりをつける
+    a, b, n = 1,1,int(10**i)
+    point = 0
+    day0 = n // a # 大体の日数のあたりをつける
+    hoge = fuga(day0)
+    ratio = hoge[0] / 10 ** (len(list(str(hoge[0])))) # 大体の日数から7のつく日の割合を計算
 
-point = a * (day + 1) + b * cntseven(day) # その時のポイントを計算
+    day = int(n / (a + b * ratio)) # 7のつく日の割合からより正確な日数のあたりをつける
 
-if point < n: # 目標より低かったら1日ずつ加算
-    while True:
-        day += 1
-        point += a
-        if seven(day):
-            point += b
-        if point >= n:
-            break
+    point = a * (day + 1) + b * cntseven(day) # その時のポイントを計算
 
-else: # 目標より高かったら1日ずつ減算
-    while True:
-        day -= 1
-        point -= a
-        if seven(day):
-            point -= b
-        if point == n:
-            break
-        elif point < n:
+    if point < n: # 目標より低かったら1日ずつ加算
+        while True:
             day += 1
-            break
+            point += a
+            if seven(day):
+                point += b
+            if point >= n:
+                break
 
-print(day)
+    else: # 目標より高かったら1日ずつ減算
+        while True:
+            day -= 1
+            point -= a
+            if seven(day):
+                point -= b
+            if point == n:
+                break
+            elif point < n:
+                day += 1
+                break
 
-'''
-7がつく日がポイント加算される店のポイントを規定以上貯める問題
-桁ごとに見ていくとその日までの7がつく日の合計数がわかる
-それを用いて大まかにアタリをつけ、異なる場合は1日ずつカウントをずらす
-だいたいO(log n)
-'''
+    time_end = time.perf_counter()
+    d = time_end- time_sta
+    y.append(d)
+    print(d)
+
+plt.figure()
+plt.plot(x, y)
+plt.show()
