@@ -1,5 +1,5 @@
 import time
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 def seven(day):
     day = list(str(day))
     day = [int(v) for v in day]
@@ -25,7 +25,9 @@ for i in x:
     y.append(d)
     print(d)
 
-print(y)
+with open('test.txt', mode='w') as f:
+    f.write(str(y))
+
 '''
 plt.figure()
 plt.plot(x, y)

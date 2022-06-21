@@ -1,5 +1,5 @@
 import time
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def fuga(n): # 各桁(10** n) の7がつく数字の数をカウントする(よりシンプル)
     n = list(str(n))
@@ -54,7 +54,8 @@ for i in x:
     #print(d)
 
 
-print(y)
+with open('test2.txt', mode='w') as f:
+    f.write(str(y))
 
 '''
 plt.figure()
