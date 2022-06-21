@@ -13,25 +13,21 @@ y = []
 for i in x:
     time_sta = time.perf_counter()
 
-    a, b, n = 1,1,int(10**i)
-    point = 0
-    day = 0
+    n = int(10**i)
+    cnt = 0
 
-    while True:
-        point += a
-        if seven(day):
-            point += b
-        if point >= n:
-            break
-
-        day += 1
+    for i in range(n+1):
+        if seven(i):
+            cnt += 1
 
     time_end = time.perf_counter()
     d = time_end- time_sta
     y.append(d)
     print(d)
 
+print(y)
+'''
 plt.figure()
-plt.gca().set_aspect('equal', adjustable='box')
 plt.plot(x, y)
 plt.show()
+'''
