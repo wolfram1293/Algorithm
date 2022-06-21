@@ -25,7 +25,7 @@ for i in x:
     y.append(d)
     print(d)
 
-with open('test.txt', mode='w') as f:
+with open('test1.txt', mode='w') as f:
     f.write(str(y))
 
 '''
