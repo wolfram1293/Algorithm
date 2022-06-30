@@ -18,7 +18,7 @@ for _ in range(N):
 #N行(list内包表記)
 A = [int(input()) for _ in range(N)]
 
-#N行(2次元)
+#N行(2次元)(xyを増やすことも可)
 N = int(input())
 xy = [map(int, input().split()) for _ in range(N)]
 x, y = [list(i) for i in zip(*xy)]
