@@ -185,3 +185,54 @@ print(ufl.group_count())
 
 print(ufl.all_group_members())
 # {'A': ['A', 'C', 'D'], 'E': ['B', 'E']}
+
+
+# ist2021 3
+
+class UnionFind: #UF木の実装
+    def __init__(self, n):
+        self.parent = [i for i in range(n)]
+        self.sizes = [1 for i in range(n)]
+        self.time = [0 for i in range(n)]
+
+    def find(self, i):
+        while self.parent[i] != i:
+            i = self.parent[i]
+        return i
+    
+    def unite(self, t, a, b):
+        i = self.find(a)
+        j = self.find(b)
+        self.parent[i] = j
+        if i != j: # より⾼い⽅にマージ
+            if self.sizes[i] > self.sizes[j]:
+                self.parent[i] = i
+                self.parent[j] = i
+                self.sizes[i] += self.sizes[j]
+                self.time[i] = t
+                self.time[j] = t
+            else:
+                self.sizes[j] += self.sizes[i]
+                self.time[j] = t
+                self.time[i] = t
+
+    def size(self, a):
+        return self.sizes[self.find(a)]
+    
+    def find_time(self, a, b):
+        if a == b: return 0
+        elif self.time[a] < self.time[b]:
+            if self.parent[a] == b: return self.time[a]
+            a = self.parent[a]
+            return self.find_time(a, b)
+        else:
+            if self.parent[b] == a: return self.time[b]
+            b = self.parent[b]
+            return self.find_time(a, b)
+
+uf = UnionFind(6)
+uf.unite(1,0,1)
+uf.unite(2,1,2)
+uf.unite(3,3,4)
+uf.unite(4,1,3)
+uf.find_time(0,3)
