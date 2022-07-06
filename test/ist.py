@@ -40,3 +40,22 @@ S = [1,2,0,2,1,0,2,1]
 T = [2,1]
 k = 3
 CountTinS2(S,T,k)
+
+# nazo?
+
+import numpy as np
+import matplotlib.pyplot as plt
+plt.axes().set_aspect('equal', 'datalim')
+n = 10
+N = np.arange(1, n+1)
+x = (N ** 3) * np.exp(-N) * np.sin(np.pi/N)
+plt.plot(N, x, marker=".")
+plt.show
+
+y = np.array([len(N), max(x), np.where(x == min(x))[0].tolist()[0]])
+print(y)
+
+a = np.random.normal(loc = 1, scale = np.sqrt(100), size  = 5)
+b = 2 * np.random.rand(5) - 1
+X = np.matrix([a, b])
+print(X)
