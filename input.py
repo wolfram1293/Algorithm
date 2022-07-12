@@ -4,7 +4,6 @@ s = input()
 s = int(input()) 
 #float
 s = float(input())
-
 #list(str)
 s = input().split()
 #list(int)
