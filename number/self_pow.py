@@ -8,3 +8,4 @@ def self_pow(x,n):
         x *= x
         n >>= 1
     return ans
+    

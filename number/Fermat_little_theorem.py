@@ -23,7 +23,7 @@ def nCk(N,K):
     M = 10**9 + 7 # 素数
     a = 1
     for i in range(N-K):
-        a *= i+1
+        a *= i + 1
         a %= M
     b = a
     for i in range(N-K,N):
@@ -40,6 +40,6 @@ def nCk(N,K):
     ans %= M
     return ans
 
-N=5
-K=3
+N = 5
+K = 3
 nCk(N,K)

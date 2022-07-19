@@ -41,6 +41,6 @@ def nCk(N,K):
     ans %= M
     return ans
 
-N=5
-K=3
+N = 5
+K = 3
 nCk(N,K)
