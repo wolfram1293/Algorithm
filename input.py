@@ -1,11 +1,15 @@
 #str
 s = input() 
+
 #int
 s = int(input()) 
+
 #float
 s = float(input())
+
 #list(str)
 s = input().split()
+
 #list(int)
 s = list(map(int, input().split()))
 
@@ -14,6 +18,7 @@ N, M = map(int, input().split())
 A = []
 for _ in range(N):
     A.append(int(input()))
+
 #N行(list内包表記)
 A = [int(input()) for _ in range(N)]
 
