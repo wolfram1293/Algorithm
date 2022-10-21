@@ -100,17 +100,17 @@ heap2.heappop()
 
 # Algo 2-2
 lines=[0 for i in range(6)]
-lines[0]='5'
-lines[1]='1 5'
-lines[2]='1 3'
-lines[3]='2'
-lines[4]='1 4'
-lines[5]='2'
-Q=int(lines[0])
-heap3=maxHeap()
+lines[0] = '5'
+lines[1] = '1 5'
+lines[2] = '1 3'
+lines[3] = '2'
+lines[4] = '1 4'
+lines[5] = '2'
+Q = int(lines[0])
+heap3 = maxHeap()
 for i in range(Q):
-    l=[int(x.strip()) for x in lines[i+1].split()]
-    if l[0]==1:
+    l = [int(x.strip()) for x in lines[i+1].split()]
+    if l[0] == 1:
         heap3.heappush(l[1])
     else:
         print(heap3.heappop())
