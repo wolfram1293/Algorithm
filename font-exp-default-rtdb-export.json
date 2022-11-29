@@ -1,0 +1,644 @@
+{
+  "users": {
+    "068059d6-8601-42d1-b265-8f318fe12c96": {
+      "age": "24",
+      "concentration": [
+        
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        }
+      ],
+      "gender": "man",
+      "results": [
+        
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "068059d6-8601-42d1-b265-8f318fe12c96",
+          "worstValue": "2"
+        }
+      ],
+      "userID": "068059d6-8601-42d1-b265-8f318fe12c96"
+    },
+    "a1051ba6-a946-419d-b04b-c5757e0c1032": {
+      "age": "23",
+      "concentration": [
+        
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        }
+      ],
+      "gender": "man",
+      "results": [
+        
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "5",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032",
+          "worstValue": "2"
+        }
+      ],
+      "userID": "a1051ba6-a946-419d-b04b-c5757e0c1032"
+    },
+    "afbe9b54-5ae2-4938-90c5-8dec1009d42f": {
+      "age": "0",
+      "concentration": [
+        
+        {
+          "bestValue": "3",
+          "typeface": "Concentration Test",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        }
+      ],
+      "gender": "man",
+      "results": [
+        
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "7",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f",
+          "worstValue": "1"
+        }
+      ],
+      "userID": "afbe9b54-5ae2-4938-90c5-8dec1009d42f"
+    },
+    "b647b614-fa69-4abc-8681-b6a935ca0244": {
+      "age": "23",
+      "concentration": [
+        
+        {
+          "bestValue": "4",
+          "typeface": "Concentration Test",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        }
+      ],
+      "gender": "woman",
+      "results": [
+        
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "5"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "7",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "b647b614-fa69-4abc-8681-b6a935ca0244",
+          "worstValue": "2"
+        }
+      ],
+      "userID": "b647b614-fa69-4abc-8681-b6a935ca0244"
+    },
+    "f8c294e5-4af7-497f-9537-185fca00378f": {
+      "age": "24",
+      "concentration": [
+        
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "1",
+          "typeface": "Concentration Test",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        }
+      ],
+      "gender": "woman",
+      "results": [
+        
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "3"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "4",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "2"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "3",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "6",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        },
+        {
+          "bestValue": "4",
+          "userID": "f8c294e5-4af7-497f-9537-185fca00378f",
+          "worstValue": "1"
+        }
+      ],
+      "userID": "f8c294e5-4af7-497f-9537-185fca00378f"
+    }
+  }
+}
